@@ -1,0 +1,11 @@
+import unittest
+import Project
+
+class TestEncrypt(unittest.TestCase):
+
+	def test_encrypt(self):
+		result=SERSA.encrypt("venkat")
+		self.assertIsNot(result,"venkat")
+
+if __name__=='__main__':
+	unittest.main()
